@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [x2go-i18n] Norwegian x2goclient translation
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-i18n/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Norwegian%20x2goclient%20translation&In-Reply-To=%3C4F385292.3090202%40gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000002.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[x2go-i18n] Norwegian x2goclient translation</H1>
+    <B>Terje Andersen</B> 
+    <A HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Norwegian%20x2goclient%20translation&In-Reply-To=%3C4F385292.3090202%40gmail.com%3E"
+       TITLE="[x2go-i18n] Norwegian x2goclient translation">teranders at gmail.com
+       </A><BR>
+    <I>Mon Feb 13 01:00:18 CET 2012</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000002.html">[x2go-i18n] Norwegian x2goclient translation
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi,
+
+I have just finished translating the Norwegian (Norwegian Bokmaal) 
+version of x2goclient, and I will continue on the the rest of the 
+packages. I intend to try to keep them updated as new strings appear.
+
+What I did to add the new translation follows here, and if I did 
+something wrong here I hope you will advise me on how to do it correct.
+(for the initial git setup, I followed the wiki here to my set name and 
+email: <A HREF="http://wiki.x2go.org/wiki:development:git">http://wiki.x2go.org/wiki:development:git</A> )
+
+1. &quot;git clone <A HREF="git://code.x2go.org/x2goclient.git">git://code.x2go.org/x2goclient.git</A>&quot;
+2. &quot;cd x2goclient&quot;
+3. &quot;git checkout&quot;
+4. Copied the German translation into a new file named &quot;x2goclient_nb.ts&quot;
+5. Editied the x2goclient.pro file and added the line: &quot;TRANSLATIONS += 
+x2goclient_nb.ts&quot;
+6. I then updated the *.ts-files with the command: &quot;lupdate x2goclient.pro&quot;
+     (This lupdate command also updated all the other language files 
+too, so I replaced them with the originals)
+7. Translated the x2goclient_nb.ts in Qt's Linguist translation application
+8. &quot;git add x2goclient_nb.ts&quot;
+9. &quot;git commit&quot;
+10. &quot;git format-patch -1&quot;
+
+The last command (step 10) created a patch-file for emailing which I've 
+attached here.
+
+What is your preferred way of receiving language files/changes? Is it ok 
+for you to get them as patches which are prepared with the 'git 
+format-patch' method here? Should the address <A HREF="https://lists.berlios.de/mailman/listinfo/x2go-i18n">patches at x2go.org</A> be used 
+instead, or maybe get a copy?
+
+I wrote the way I did the whole git and translation process because it's 
+missing on the wiki (where I thought it would be written down, it says 
+&quot;TODO&quot; - both on the devel page, and also on the documentation of the 
+Translation). If this is an approved way of doing the translation 
+process, or if you can correct me, I can write this up on the wiki if 
+you would like me to. How can I go about to get write access to the wiki?
+
+wow! I guess I've asked a lot of questions here - sorry for that! But as 
+I'm new to the project and there are &quot;black holes&quot; in the documentation, 
+I hope you will be lenient with me :-)
+
+Best regards,
+Terje Andersen
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120213/86e1d951/attachment.html">https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120213/86e1d951/attachment.html</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 0001-Created-Norwegian-Bokmaal-nb-translation.patch
+Type: text/x-patch
+Size: 142485 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120213/86e1d951/attachment.bin">https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120213/86e1d951/attachment.bin</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000002.html">[x2go-i18n] Norwegian x2goclient translation
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#1">[ date ]</a>
+              <a href="thread.html#1">[ thread ]</a>
+              <a href="subject.html#1">[ subject ]</a>
+              <a href="author.html#1">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-i18n">More information about the x2go-i18n
+mailing list</a><br>
+</body></html>

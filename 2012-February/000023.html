@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [x2go-i18n] Swedish translation for x2goclient
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-i18n/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Swedish%20translation%20for%20x2goclient&In-Reply-To=%3CCAAWyt1qpgyH3K1uMB8kc78eikpMr5YSJ9%3D5VBzpCCZ8ZRu2JiA%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000021.html">
+   <LINK REL="Next"  HREF="000025.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[x2go-i18n] Swedish translation for x2goclient</H1>
+    <B>Daniel Lindgren</B> 
+    <A HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Swedish%20translation%20for%20x2goclient&In-Reply-To=%3CCAAWyt1qpgyH3K1uMB8kc78eikpMr5YSJ9%3D5VBzpCCZ8ZRu2JiA%40mail.gmail.com%3E"
+       TITLE="[x2go-i18n] Swedish translation for x2goclient">bd.dali at gmail.com
+       </A><BR>
+    <I>Sat Feb 18 21:20:49 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000021.html">[x2go-i18n] Swedish translation for x2goclient
+</A></li>
+        <LI>Next message: <A HREF="000025.html">[x2go-i18n] Swedish translation for x2goclient
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#23">[ date ]</a>
+              <a href="thread.html#23">[ thread ]</a>
+              <a href="subject.html#23">[ subject ]</a>
+              <a href="author.html#23">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Mike,
+
+&gt;<i> I chose the second file you sent.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;&gt;<i> The second patch correctly uses x2goclient_sv_se.ts which matches the
+</I>&gt;&gt;<i> locale and there are some minor fixes too.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> Actually I changed the locale name back to x2goclient_sv.ts.
+</I>&gt;<i>
+</I>&gt;<i> Language codes (like sv) should map to locales (sv_SE) and vice versa
+</I>&gt;<i> without no problem.
+</I>&gt;<i> <A HREF="http://blog.i18n.ro/simplified-locale-codes/">http://blog.i18n.ro/simplified-locale-codes/</A>
+</I>&gt;<i>
+</I>&gt;<i> Qt4 also only has a qt_sv.qm file in the libqtcore4 Debian package.
+</I>&gt;<i>
+</I>&gt;<i> I already built the package for Debian (heuler repos) and I can run the
+</I>&gt;<i> x2goclient in swedish:
+</I>&gt;<i>
+</I>&gt;<i> LANG=sv_SE.UTF-8 x2goclient
+</I>
+OK, I saw the &quot;old&quot; file name and wasn't sure which version you'd
+committed. If it works either way it's all good.
+
+Before I knew how to correctly build x2goclient there was an error
+message about qt_sv_se not being found so I renamed the file to match.
+It was after that I figured out how to create the missing qm file in
+Qt Linguist (and that I needed to add it to resource.rcc), which I
+guess would have worked with ..._sv.ts too.
+
+Anyway, I've seen some minor issues that I'll fix in a new patch
+(starting from latest git), I'll use the new client for a while to see
+if I find anything more before I send it.
+
+Cheers,
+Daniel
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000021.html">[x2go-i18n] Swedish translation for x2goclient
+</A></li>
+	<LI>Next message: <A HREF="000025.html">[x2go-i18n] Swedish translation for x2goclient
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#23">[ date ]</a>
+              <a href="thread.html#23">[ thread ]</a>
+              <a href="subject.html#23">[ subject ]</a>
+              <a href="author.html#23">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-i18n">More information about the x2go-i18n
+mailing list</a><br>
+</body></html>

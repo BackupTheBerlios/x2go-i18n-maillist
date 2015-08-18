@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-i18n/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20pyhoca-gui%20in%20Swedish%20and%20Bokmal%3F&In-Reply-To=%3C20120219202910.99261j8f69hc38g6%40mail.das-netzwerkteam.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000037.html">
+   <LINK REL="Next"  HREF="000042.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[x2go-i18n] pyhoca-gui in Swedish and Bokmal?</H1>
+    <B>Mike Gabriel</B> 
+    <A HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20pyhoca-gui%20in%20Swedish%20and%20Bokmal%3F&In-Reply-To=%3C20120219202910.99261j8f69hc38g6%40mail.das-netzwerkteam.de%3E"
+       TITLE="[x2go-i18n] pyhoca-gui in Swedish and Bokmal?">mike.gabriel at das-netzwerkteam.de
+       </A><BR>
+    <I>Sun Feb 19 20:29:10 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000037.html">[x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+</A></li>
+        <LI>Next message: <A HREF="000042.html">[x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#38">[ date ]</a>
+              <a href="thread.html#38">[ thread ]</a>
+              <a href="subject.html#38">[ subject ]</a>
+              <a href="author.html#38">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Daniel,
+
+On So 19 Feb 2012 18:28:52 CET Daniel Lindgren wrote:
+
+&gt;<i> Hi Mike,
+</I>&gt;<i>
+</I>&gt;<i> I've updated to the latest (heuler) version and have caught a couple
+</I>&gt;<i> of mistakes in the swedish translation, see attached patch. Although I
+</I>&gt;<i> only updated a few lines, the patch recorded 87 insertions and 67
+</I>&gt;<i> deletions ... not sure why, perhaps it has to do with how poedit
+</I>&gt;<i> updates a file. I attached the po file as well in case something went
+</I>&gt;<i> awry.
+</I>
+Ok, patch applied.
+
+&gt;<i> Some other things I noted:
+</I>&gt;<i>
+</I>&gt;<i> - The string &quot;Custom session window title&quot; is truncated to &quot;Custom
+</I>&gt;<i> session&quot; in PyHoca-GUI (Profile Manager -&gt; Profile tab), at least on
+</I>&gt;<i> my Debian Gnome install. The translated text is also truncated, I
+</I>&gt;<i> guess that the label is too short or limited in some way.
+</I>
+Fixed in Git.
+
+&gt;<i> - The labels for &quot;Keyboard layout&quot; and &quot;Keyboard model&quot; are too short
+</I>&gt;<i> for the swedish strings, the last 2-3 characters are truncated.
+</I>
+Fixed in Git.
+
+&gt;<i> - Would it be possible to add the keyboard layout (&quot;us&quot;) and model
+</I>&gt;<i> (&quot;pc105/us&quot;) strings to the translation? That way you could preset the
+</I>&gt;<i> correct values for each language, as was possible in x2goclient.
+</I>
+Great idea, available in Git. This adds one more i18n tag.
+
+&gt;<i> - Nothing happens if I choose &quot;Printing Preferences&quot; from the context
+</I>&gt;<i> menu. This error message is printed to the terminal:
+</I>&gt;<i>
+</I>&gt;<i> Traceback (most recent call last):
+</I>&gt;<i>   File &quot;/usr/lib/pymodules/python2.7/pyhoca/wxgui/frontend.py&quot;, line
+</I>&gt;<i> 734, in OnPrintingPreferences
+</I>&gt;<i>     _pp_dialog = printingprefs.PyHocaGUI_PrintingPreferences(self)
+</I>&gt;<i>   File &quot;/usr/lib/pymodules/python2.7/pyhoca/wxgui/printingprefs.py&quot;,
+</I>&gt;<i> line 141, in __init__
+</I>&gt;<i>     self.__update_fields()
+</I>&gt;<i>   File &quot;/usr/lib/pymodules/python2.7/pyhoca/wxgui/printingprefs.py&quot;,
+</I>&gt;<i> line 225, in __update_fields
+</I>&gt;<i>     _printer_name = self._availablePrinters[self._defaultPrinter]
+</I>&gt;<i> KeyError: None
+</I>
+This probably fails because you have to printers installed in CUPS.  
+This is, of course, a bug. Fixed in Git.
+
+&gt;<i> Cheers,
+</I>&gt;<i> Daniel
+</I>
+A package build is currently running, I will be glad if you cross  
+check my latest patches.
+
+Mike
+
+
+
+
+-- 
+
+DAS-NETZWERKTEAM
+mike gabriel, dorfstr. 27, 24245 barmissen
+fon: +49 (4302) 281418, fax: +49 (4302) 281419
+
+GnuPG Key ID 0xB588399B
+mail: <A HREF="https://lists.berlios.de/mailman/listinfo/x2go-i18n">mike.gabriel at das-netzwerkteam.de</A>, <A HREF="http://das-netzwerkteam.de">http://das-netzwerkteam.de</A>
+
+freeBusy:
+<A HREF="https://mail.das-netzwerkteam.de/freebusy/m.gabriel%40das-netzwerkteam.de.xfb">https://mail.das-netzwerkteam.de/freebusy/m.gabriel%40das-netzwerkteam.de.xfb</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 490 bytes
+Desc: Digitale PGP-Unterschrift
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120219/be0f14b4/attachment.pgp">https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120219/be0f14b4/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000037.html">[x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+</A></li>
+	<LI>Next message: <A HREF="000042.html">[x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#38">[ date ]</a>
+              <a href="thread.html#38">[ thread ]</a>
+              <a href="subject.html#38">[ subject ]</a>
+              <a href="author.html#38">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-i18n">More information about the x2go-i18n
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [x2go-i18n] [X2Go-Dev] I18n - how to do it
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-i18n/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20%5BX2Go-Dev%5D%20I18n%20-%20how%20to%20do%20it&In-Reply-To=%3C4F4297FD.3060606%40gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000041.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[x2go-i18n] [X2Go-Dev] I18n - how to do it</H1>
+    <B>Terje Andersen</B> 
+    <A HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20%5BX2Go-Dev%5D%20I18n%20-%20how%20to%20do%20it&In-Reply-To=%3C4F4297FD.3060606%40gmail.com%3E"
+       TITLE="[x2go-i18n] [X2Go-Dev] I18n - how to do it">teranders at gmail.com
+       </A><BR>
+    <I>Mon Feb 20 19:59:09 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000041.html">[x2go-i18n] [X2Go-Dev] I18n - how to do it
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#43">[ date ]</a>
+              <a href="thread.html#43">[ thread ]</a>
+              <a href="subject.html#43">[ subject ]</a>
+              <a href="author.html#43">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Moritz, Mike &amp; all
+
+Den 20. feb. 2012 11:12, skrev Moritz Struebe:
+&gt;<i> Hi Mike.
+</I>&gt;<i>
+</I>&gt;<i> On 2012-02-20 10:46, Mike Gabriel wrote:
+</I>&gt;&gt;<i> Most important thing is that such a translation service does not
+</I>&gt;&gt;<i> conflict with manual translation commits.
+</I>&gt;<i> No, this should of course not be the case. Basically I am thinking of an
+</I>&gt;<i> upload and a download script. The upload-script will take the latest
+</I>&gt;<i> files from GIT and upload them to the server. This _can_ be triggered
+</I>&gt;<i> using a cron job or done manually. The download script will download the
+</I>&gt;<i> files and update the git. I'm not sure yet, whether it is better to do
+</I>&gt;<i> this manually or by using a cron job. None the loss the workload should
+</I>&gt;<i> not be lower than accepting a patch.
+</I>&gt;<i> Using the client is described in [1]. It even denies to update the local
+</I>&gt;<i> files when updating from the server, if you made local changes. :) Or if
+</I>&gt;<i> someone else checks a new version into git you can automatically update
+</I>&gt;<i> the version on the translation server.
+</I>&gt;<i>
+</I>&gt;<i> Cheers
+</I>&gt;<i> Morty
+</I>&gt;<i>
+</I>
+I've used transifex, rosetta and pootle before and I'm not a big fan,
+the only two positive things (in my view) with them is that they make
+it easy for &quot;drive-by&quot; translation (not dedicated translation). This
+might be a big plus if what you want is a greater numbers of
+languages (which might, or might not be completely translated),
+but I think the quality goes down on the actual translation.
+With the web-based solutions also the amount of collected words,
+with their potential translation, from all the different projects using
+the service might be of help to someone, but still might lead the
+translator into using wrong words because of the missing context
+and the fact that others have chosen this word (in another, not
+related project).
+
+With Qt Linguest, often the dialog will be shown (Wow! I wish this
+would be the case for all the strings :p) which helps tremendously
+in understanding the context of the strings currently being translated.
+With po-edit it's more like the web-based ones, it's not easy to
+understand the context.
+
+I too have some concerns on how to do the practical merge of the
+manual translation patches sent over mail with the download from
+the web-based service. Which &quot;wins&quot; when there are strings
+which are translated both manually and on the web-based service?
+
+In relation to the work of committing the translation patches, I
+think that with the first patches from new translators there will
+be questions, something went wrong and uncertainness on how
+things are done.
+I see two ways of making the time to commit the
+patches sent from translators less time-consuming.
+
+1) Keep clean and concise (and always updated) instructions on how
+to do the actual translation, how to create the patch, and finally where
+to send the patches.
+2) Give translators git commit access (somehow I see this one as
+being the least likely to happen :p).
+
+In my view, translators, web-page admins and documentation
+writes in a project on equal footing as those who commits
+small code-patches - all being potential committers to either
+git, or wiki/web. As people show commitment, trust should be
+given in different levels and on different arenas.
+
+This isn't an argument for giving me git, or any other access, it's
+just my point on view and my points towards the web-based
+translation services.
+
+Anyway, I guess I'll be committed either way in translating X2Go,
+(as long as you want me, that is :-)), it's your choice what to
+use ;-)
+
+Best regards,
+Terje
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000041.html">[x2go-i18n] [X2Go-Dev] I18n - how to do it
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#43">[ date ]</a>
+              <a href="thread.html#43">[ thread ]</a>
+              <a href="subject.html#43">[ subject ]</a>
+              <a href="author.html#43">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-i18n">More information about the x2go-i18n
+mailing list</a><br>
+</body></html>

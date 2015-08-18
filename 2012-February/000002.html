@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [x2go-i18n] Norwegian x2goclient translation
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-i18n/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Norwegian%20x2goclient%20translation&In-Reply-To=%3C20120214134335.16492v0dpm9lou0n%40mail.das-netzwerkteam.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000001.html">
+   <LINK REL="Next"  HREF="000003.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[x2go-i18n] Norwegian x2goclient translation</H1>
+    <B>Mike Gabriel</B> 
+    <A HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Norwegian%20x2goclient%20translation&In-Reply-To=%3C20120214134335.16492v0dpm9lou0n%40mail.das-netzwerkteam.de%3E"
+       TITLE="[x2go-i18n] Norwegian x2goclient translation">mike.gabriel at das-netzwerkteam.de
+       </A><BR>
+    <I>Tue Feb 14 13:43:35 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000001.html">[x2go-i18n] Norwegian x2goclient translation
+</A></li>
+        <LI>Next message: <A HREF="000003.html">[x2go-i18n] Norwegian x2goclient translation
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2">[ date ]</a>
+              <a href="thread.html#2">[ thread ]</a>
+              <a href="subject.html#2">[ subject ]</a>
+              <a href="author.html#2">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Terje,
+
+thanks for your contribution and your willingness to help continuously  
+in the future.
+
+I am cross-posting this mail to x2go-dev so people become aware of an  
+assembling i18n-Team.
+
+@Stefan: make sure you subscribe to this list, as well:
+<A HREF="http://lists.berlios.de/mailman/listinfo/x2go-i18n">http://lists.berlios.de/mailman/listinfo/x2go-i18n</A>
+
+On Mo 13 Feb 2012 01:00:18 CET Terje Andersen wrote:
+
+&gt;<i> I have just finished translating the Norwegian (Norwegian Bokmaal)  
+</I>&gt;<i> version of x2goclient, and I will continue on the the rest of the  
+</I>&gt;<i> packages. I intend to try to keep them updated as new strings appear.
+</I>
+Great!!!
+
+&gt;<i> What I did to add the new translation follows here, and if I did  
+</I>&gt;<i> something wrong here I hope you will advise me on how to do it  
+</I>&gt;<i> correct.
+</I>&gt;<i> (for the initial git setup, I followed the wiki here to my set name  
+</I>&gt;<i> and email: <A HREF="http://wiki.x2go.org/wiki:development:git">http://wiki.x2go.org/wiki:development:git</A> )
+</I>&gt;<i>
+</I>&gt;<i> 1. &quot;git clone <A HREF="git://code.x2go.org/x2goclient.git">git://code.x2go.org/x2goclient.git</A>&quot;
+</I>&gt;<i> 2. &quot;cd x2goclient&quot;
+</I>&gt;<i> 3. &quot;git checkout&quot;
+</I>&gt;<i> 4. Copied the German translation into a new file named &quot;x2goclient_nb.ts&quot;
+</I>&gt;<i> 5. Editied the x2goclient.pro file and added the line: &quot;TRANSLATIONS  
+</I>&gt;<i> += x2goclient_nb.ts&quot;
+</I>&gt;<i> 6. I then updated the *.ts-files with the command: &quot;lupdate x2goclient.pro&quot;
+</I>&gt;<i>     (This lupdate command also updated all the other language files  
+</I>&gt;<i> too, so I replaced them with the originals)
+</I>&gt;<i> 7. Translated the x2goclient_nb.ts in Qt's Linguist translation application
+</I>&gt;<i> 8. &quot;git add x2goclient_nb.ts&quot;
+</I>&gt;<i> 9. &quot;git commit&quot;
+</I>&gt;<i> 10. &quot;git format-patch -1&quot;
+</I>
+This howto basically is ok. We have removed the x2goclient_LANG.qm  
+files from Git now, as they are actually build cruft and do not belong  
+into Git.
+
+&gt;<i> The last command (step 10) created a patch-file for emailing which  
+</I>&gt;<i> I've attached here.
+</I>
+&gt;<i> What is your preferred way of receiving language files/changes? Is  
+</I>&gt;<i> it ok for you to get them as patches which are prepared with the  
+</I>&gt;<i> 'git format-patch' method here? Should the address <A HREF="https://lists.berlios.de/mailman/listinfo/x2go-i18n">patches at x2go.org</A>  
+</I>&gt;<i> be used instead, or maybe get a copy?
+</I>
+Great, this is a good place to attache those files for now. (Until we  
+have _and_ use a common bugtracker for X2Go upstream coding).
+
+&gt;<i> I wrote the way I did the whole git and translation process because  
+</I>&gt;<i> it's missing on the wiki (where I thought it would be written down,  
+</I>&gt;<i> it says &quot;TODO&quot; - both on the devel page, and also on the  
+</I>&gt;<i> documentation of the Translation). If this is an approved way of  
+</I>&gt;<i> doing the translation process, or if you can correct me, I can write  
+</I>&gt;<i> this up on the wiki if you would like me to. How can I go about to  
+</I>&gt;<i> get write access to the wiki?
+</I>
+Please start a page on this and send me the link once you have  
+achieved something. I will proof-read.
+
+&gt;<i> wow! I guess I've asked a lot of questions here - sorry for that!  
+</I>&gt;<i> But as I'm new to the project and there are &quot;black holes&quot; in the  
+</I>&gt;<i> documentation, I hope you will be lenient with me :-)
+</I>
+Asking questions is absolutely fine!!!
+
+&gt;<i> Best regards,
+</I>&gt;<i> Terje Andersen
+</I>
+Keep up the good work...
+
+BTW: your .ts file has been committed.
+<A HREF="http://code.x2go.org/gitweb?p=x2goclient.git;a=commitdiff;h=373da1c16fb5cad8b9f4e77db2085b96f43270ad">http://code.x2go.org/gitweb?p=x2goclient.git;a=commitdiff;h=373da1c16fb5cad8b9f4e77db2085b96f43270ad</A>
+
+Unfortunately, Qt4 seems to lack Bokmal support. So not all  
+elements/widgets of x2goclient will be translated. Test packages are  
+currently building for Debian, Ubuntu package will follow within the  
+next 24 hours. Please install x2goclient from the nightly build repos  
+you prefer for your OS/Distro.
+
+Greets,
+Mike
+
+
+
+-- 
+
+DAS-NETZWERKTEAM
+mike gabriel, dorfstr. 27, 24245 barmissen
+fon: +49 (4302) 281418, fax: +49 (4302) 281419
+
+GnuPG Key ID 0xB588399B
+mail: <A HREF="https://lists.berlios.de/mailman/listinfo/x2go-i18n">mike.gabriel at das-netzwerkteam.de</A>, <A HREF="http://das-netzwerkteam.de">http://das-netzwerkteam.de</A>
+
+freeBusy:
+<A HREF="https://mail.das-netzwerkteam.de/freebusy/m.gabriel%40das-netzwerkteam.de.xfb">https://mail.das-netzwerkteam.de/freebusy/m.gabriel%40das-netzwerkteam.de.xfb</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 490 bytes
+Desc: Digitale PGP-Unterschrift
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120214/28e6000f/attachment.pgp">https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120214/28e6000f/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000001.html">[x2go-i18n] Norwegian x2goclient translation
+</A></li>
+	<LI>Next message: <A HREF="000003.html">[x2go-i18n] Norwegian x2goclient translation
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#2">[ date ]</a>
+              <a href="thread.html#2">[ thread ]</a>
+              <a href="subject.html#2">[ subject ]</a>
+              <a href="author.html#2">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-i18n">More information about the x2go-i18n
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [x2go-i18n] Suggestions
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-i18n/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Suggestions&In-Reply-To=%3C20120215210425.16082v8dw9b6pvwp%40mail.das-netzwerkteam.de%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000006.html">
+   <LINK REL="Next"  HREF="000009.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[x2go-i18n] Suggestions</H1>
+    <B>Mike Gabriel</B> 
+    <A HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Suggestions&In-Reply-To=%3C20120215210425.16082v8dw9b6pvwp%40mail.das-netzwerkteam.de%3E"
+       TITLE="[x2go-i18n] Suggestions">mike.gabriel at das-netzwerkteam.de
+       </A><BR>
+    <I>Wed Feb 15 21:04:25 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000006.html">[x2go-i18n] Suggestions
+</A></li>
+        <LI>Next message: <A HREF="000009.html">[x2go-i18n] Suggestions
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Terje,
+
+cross-posting to x2go-dev as not so many people are listening to  
+x2go-i18n, yet.
+
+On Mi 15 Feb 2012 20:10:32 CET Terje Andersen wrote:
+
+&gt;<i> I've been thinking here (I know, that's dangerous :p) and I've got  
+</I>&gt;<i> two suggestions:
+</I>&gt;<i>
+</I>&gt;<i> 1.
+</I>&gt;<i> I've been thinking about the translation of X2Go into languages with  
+</I>&gt;<i> less widespread usage (like Norwegian is because of the small  
+</I>&gt;<i> population).
+</I>&gt;<i> When someone gets an error message and he/she wants to search for  
+</I>&gt;<i> more information on that error, they got less chance on finding any  
+</I>&gt;<i> help/information because the text they search on is in a &quot;small&quot;  
+</I>&gt;<i> (less used) language. Knowing what the text is in the original  
+</I>&gt;<i> (English) language isn't possible/easy as the translation isn't done  
+</I>&gt;<i> word-for-word, so the user can't search in English.
+</I>&gt;<i> What I propose is to add an error-code/number which is the same  
+</I>&gt;<i> regardless of the language used. If this could be something more  
+</I>&gt;<i> than just a number, like &quot;[x2go-1234568]&quot; it would be real easy to  
+</I>&gt;<i> find information with search engines. This would greatly improve the  
+</I>&gt;<i> success rate in resolving any errors, and reduce the potential for  
+</I>&gt;<i> frustration. A list, with the potential for translated versions, on  
+</I>&gt;<i> the wiki could be kept updated with the error-code and a short  
+</I>&gt;<i> helpful explanation/help text.
+</I>&gt;<i>
+</I>&gt;<i> I really hope this can be considered for X2Go.
+</I>
+ From my point of view, I would rather make it easy to run the  
+application in English for debugging and recommend this as the way to  
+go. On Linux, this is easy:
+
+   LANG=C x2goclient
+   LANG=C pyhoca-gui
+
+On Windows, pyhoca-gui has a --lang &lt;LANG&gt; option. About x2goclient, I  
+do not have a clue.
+
+Doing error number bookkeeping, I guess I won't become a fan of... Hmmm...
+
+&gt;<i> 2.
+</I>&gt;<i> In the original text (English) in the X2Go client the words  
+</I>&gt;<i> &quot;suspend&quot; and &quot;resume&quot; gives the impression (at least for me) that  
+</I>&gt;<i> the session is paused when suspended. I remember the early version  
+</I>&gt;<i> of the NX libraries which actually paused the session when  
+</I>&gt;<i> suspended, but that's a long time ago, and no longer the case. I  
+</I>&gt;<i> therefore propose to use the words &quot;disconnect&quot; and &quot;reconnect&quot;  
+</I>&gt;<i> instead, as this would more correct indicate the functionality that  
+</I>&gt;<i> actually takes place.
+</I>
+I guess we should not change anything here, unless we find a way to  
+offer both possibilities:
+
+   suspend+resume -&gt; freeze a session state and unfreeze it later
+   disconnect+reconnect -&gt; leave a session running, come back to it later
+
+I am wondering if the freeze/unfreeze couple is still available with  
+NX!!! If so, that would be an interesting feature.
+
+Mike
+
+
+-- 
+
+DAS-NETZWERKTEAM
+mike gabriel, dorfstr. 27, 24245 barmissen
+fon: +49 (4302) 281418, fax: +49 (4302) 281419
+
+GnuPG Key ID 0xB588399B
+mail: <A HREF="https://lists.berlios.de/mailman/listinfo/x2go-i18n">mike.gabriel at das-netzwerkteam.de</A>, <A HREF="http://das-netzwerkteam.de">http://das-netzwerkteam.de</A>
+
+freeBusy:
+<A HREF="https://mail.das-netzwerkteam.de/freebusy/m.gabriel%40das-netzwerkteam.de.xfb">https://mail.das-netzwerkteam.de/freebusy/m.gabriel%40das-netzwerkteam.de.xfb</A>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-signature
+Size: 490 bytes
+Desc: Digitale PGP-Unterschrift
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120215/3a71f55a/attachment.pgp">https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120215/3a71f55a/attachment.pgp</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000006.html">[x2go-i18n] Suggestions
+</A></li>
+	<LI>Next message: <A HREF="000009.html">[x2go-i18n] Suggestions
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-i18n">More information about the x2go-i18n
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [x2go-i18n] Suggestions
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-i18n/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Suggestions&In-Reply-To=%3CCA%2BxgCOLVopjxOGZid9OvRqj6o8%3D2jfUke0ay6tYwHwFJ%2BEfW_w%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000011.html">
+   <LINK REL="Next"  HREF="000014.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[x2go-i18n] Suggestions</H1>
+    <B>Terje Andersen</B> 
+    <A HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20Suggestions&In-Reply-To=%3CCA%2BxgCOLVopjxOGZid9OvRqj6o8%3D2jfUke0ay6tYwHwFJ%2BEfW_w%40mail.gmail.com%3E"
+       TITLE="[x2go-i18n] Suggestions">teranders at gmail.com
+       </A><BR>
+    <I>Thu Feb 16 10:27:43 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000011.html">[x2go-i18n] Suggestions
+</A></li>
+        <LI>Next message: <A HREF="000014.html">[x2go-i18n] Suggestions
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>2012/2/16 <A HREF="https://lists.berlios.de/mailman/listinfo/x2go-i18n">newsgroups.mail2 at stefanbaur.de</A> &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/x2go-i18n">newsgroups.mail2 at stefanbaur.de</A>&gt;
+
+&gt;<i> Am 16.02.2012 08:44, schrieb Daniel Lindgren:
+</I>&gt;<i>
+</I>&gt;<i>  Doing error number bookkeeping, I guess I won't become a fan of... Hmmm...
+</I>&gt;&gt;&gt;<i>
+</I>&gt;&gt;<i> I'm also a &quot;less used&quot; language user and I've had the exact same idea
+</I>&gt;&gt;<i> as Terje. Troubleshooting (i e googling) error messages in Swedish is
+</I>&gt;&gt;<i> rarely succesful, you pretty much have to translate them to english -
+</I>&gt;&gt;<i> with varying success - to get any hits at all.
+</I>&gt;&gt;<i>
+</I>&gt;&gt;<i> If all error messages included an error code/number it would simplify
+</I>&gt;&gt;<i> things a lot.
+</I>&gt;&gt;<i>
+</I>&gt;<i>
+</I>&gt;<i> I don't think numbering will help that much.  I mean, googling for &quot;42&quot;
+</I>&gt;<i> will turn up a lot of answers, but not necessarily the one you're looking
+</I>&gt;<i> for. ;-)
+</I>&gt;<i>
+</I>
+I didn't propose that, my suggestion was to use a code-scheme like this:
+
+&quot;[x2go-1234568]&quot;
+
+Searching on that specific string would give unique and accurate results. The
+concept of error-codes is well know, and is also a part of the error
+message at hand.
+
+I'd suggest an option to display the English error message, either by
+&gt;<i> hovering the mouse over the translated error message or by clicking a
+</I>&gt;<i> button.
+</I>&gt;<i>
+</I>
+I'm no developer so I can't tell if that would
+require unsubstantial changes to the code, or not, but it sounds to me like
+it would, but I see your point.
+
+The easiest way, though, as it wouldn't require changing actual code, would
+&gt;<i> be to provide the translation file in a human-readable (and -searchable)
+</I>&gt;<i> form on the X2Go homepage or within the x2goclient installation package.
+</I>&gt;<i>
+</I>&gt;<i>
+</I>I understand, then the user would have to use the results found by the
+initial search and then translate his/hers error message into another
+language and search for the results. It helps somewhat, but in my view it
+could be done better with error-codes.
+
+A simple way of achieving this is to use a simple hierarchy of codes -
+divide series of codes up and allocate different series to different
+code-parts/files and insert the numbers (incrementally) into the error
+messages/strings. This way, the translator would keep the error-code in the
+translated message. If one sets aside big enough series it would be easy to
+add new, and overlooked messages wouldn't present any problem; just pick
+the next available number in the allocated series of numbers. Another way
+of doing this, would be to just pick a new available series of numbers when
+one has been used up.
+
+Example:
+[x2go-000000 --&gt; 000099] = X2Goclient
+[x2go-000100 --&gt; 000199] = Pyhoca-GUI
+
+and so on.
+
+Regards,
+Terje
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120216/87abecd7/attachment.html">https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120216/87abecd7/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000011.html">[x2go-i18n] Suggestions
+</A></li>
+	<LI>Next message: <A HREF="000014.html">[x2go-i18n] Suggestions
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-i18n">More information about the x2go-i18n
+mailing list</a><br>
+</body></html>

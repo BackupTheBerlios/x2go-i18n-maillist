@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/x2go-i18n/2012-February/index.html" >
+   <LINK REL="made" HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20pyhoca-gui%20in%20Swedish%20and%20Bokmal%3F&In-Reply-To=%3CCAAWyt1ozDrowVjvXNhmmKzgTgf-eBdPNDC_Xs1f6BdPBpqcDxw%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000031.html">
+   <LINK REL="Next"  HREF="000038.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[x2go-i18n] pyhoca-gui in Swedish and Bokmal?</H1>
+    <B>Daniel Lindgren</B> 
+    <A HREF="mailto:x2go-i18n%40lists.berlios.de?Subject=Re%3A%20%5Bx2go-i18n%5D%20pyhoca-gui%20in%20Swedish%20and%20Bokmal%3F&In-Reply-To=%3CCAAWyt1ozDrowVjvXNhmmKzgTgf-eBdPNDC_Xs1f6BdPBpqcDxw%40mail.gmail.com%3E"
+       TITLE="[x2go-i18n] pyhoca-gui in Swedish and Bokmal?">bd.dali at gmail.com
+       </A><BR>
+    <I>Sun Feb 19 18:28:52 CET 2012</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000031.html">[x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+</A></li>
+        <LI>Next message: <A HREF="000038.html">[x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#37">[ date ]</a>
+              <a href="thread.html#37">[ thread ]</a>
+              <a href="subject.html#37">[ subject ]</a>
+              <a href="author.html#37">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Mike,
+
+I've updated to the latest (heuler) version and have caught a couple
+of mistakes in the swedish translation, see attached patch. Although I
+only updated a few lines, the patch recorded 87 insertions and 67
+deletions ... not sure why, perhaps it has to do with how poedit
+updates a file. I attached the po file as well in case something went
+awry.
+
+Some other things I noted:
+
+- The string &quot;Custom session window title&quot; is truncated to &quot;Custom
+session&quot; in PyHoca-GUI (Profile Manager -&gt; Profile tab), at least on
+my Debian Gnome install. The translated text is also truncated, I
+guess that the label is too short or limited in some way.
+
+- The labels for &quot;Keyboard layout&quot; and &quot;Keyboard model&quot; are too short
+for the swedish strings, the last 2-3 characters are truncated.
+
+- Would it be possible to add the keyboard layout (&quot;us&quot;) and model
+(&quot;pc105/us&quot;) strings to the translation? That way you could preset the
+correct values for each language, as was possible in x2goclient.
+
+- Nothing happens if I choose &quot;Printing Preferences&quot; from the context
+menu. This error message is printed to the terminal:
+
+Traceback (most recent call last):
+  File &quot;/usr/lib/pymodules/python2.7/pyhoca/wxgui/frontend.py&quot;, line
+734, in OnPrintingPreferences
+    _pp_dialog = printingprefs.PyHocaGUI_PrintingPreferences(self)
+  File &quot;/usr/lib/pymodules/python2.7/pyhoca/wxgui/printingprefs.py&quot;,
+line 141, in __init__
+    self.__update_fields()
+  File &quot;/usr/lib/pymodules/python2.7/pyhoca/wxgui/printingprefs.py&quot;,
+line 225, in __update_fields
+    _printer_name = self._availablePrinters[self._defaultPrinter]
+KeyError: None
+
+Cheers,
+Daniel
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 0001-Swedish-language-update.patch
+Type: text/x-patch
+Size: 13310 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120219/12038d72/attachment.bin">https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120219/12038d72/attachment.bin</A>&gt;
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: sv.po
+Type: text/x-gettext-translation
+Size: 30521 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120219/12038d72/attachment-0001.bin">https://lists.berlios.de/pipermail/x2go-i18n/attachments/20120219/12038d72/attachment-0001.bin</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000031.html">[x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+</A></li>
+	<LI>Next message: <A HREF="000038.html">[x2go-i18n] pyhoca-gui in Swedish and Bokmal?
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#37">[ date ]</a>
+              <a href="thread.html#37">[ thread ]</a>
+              <a href="subject.html#37">[ subject ]</a>
+              <a href="author.html#37">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/x2go-i18n">More information about the x2go-i18n
+mailing list</a><br>
+</body></html>
